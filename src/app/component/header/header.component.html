@@ -1,1 +1,15 @@
-<p>header works!</p>
+<header>
+    <div class="navbar bg-dark shadow-sm">
+        <div class="navbar-brand align-items-center d-flex center">
+            <strong style="font-size: 35px; padding-left:10px;" class="text-white">QuickShop</strong>
+            <div class="form-group">
+                <input type="text" class="form-control" ([ngModel])="searchTerm" (keyup)="search($event)" placeholder="search products">
+            </div>
+            <span class="fas fa-search search-icon" ></span>
+        </div>
+        <button class="btn btn-dark" style="color:white" routerLink="cart">
+            <i class="fas fa-cart-plus" style="font-size:30px"></i>
+            <div *ngIf="totalItems > 0" class="badge bg-danger" style="font-size: 10px;">{{totalItems}}</div>
+        </button>
+    </div>
+</header>

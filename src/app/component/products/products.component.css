@@ -1,0 +1,46 @@
+.card-top{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    background-color: #262B2F;
+    border: 1px solid #262B2F;
+    border-radius: .25rem;
+}
+
+.item img{
+    width: 64px;  
+}
+.item{
+    margin: 0px 15px;
+    text-align: center;
+}
+
+.item a:hover{
+    color: blue;
+    cursor: pointer;
+}
+.item a:hover>h6{
+    color: blue;
+    cursor: pointer;
+}
+
+.card{
+    padding: 20px;
+    margin: 50px;
+}
+
+.card img{
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+    transition: 0.3s ease-in-out;
+
+}
+
+.card img:hover{
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+}
